@@ -3,6 +3,12 @@ import PricingTable from "@/components/PricingTable";
 import FAQ from "@/components/FAQ";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Microsoft 365 para Gobierno en Panamá | SolutechCloud",
+  description:
+    "Licenciamiento oficial, facturación local, seguridad avanzada, migración guiada y soporte en español. Especialistas en sector público y licitaciones.",
+};
+
 export default function Page() {
   return (
     <>
