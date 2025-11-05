@@ -194,7 +194,7 @@ export default function Page() {
       </Section>
       
       {/* dentro del componente Page() justo antes del cierre */ }
-      // @ts-ignore
+ 
       <Script
         id="jsonld-gobierno"
         type="application/ld+json"
