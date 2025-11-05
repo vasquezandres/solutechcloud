@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-limit { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+.btn-primary { @apply inline-flex items-center gap-2 rounded-2xl px-5 py-3 font-medium shadow-lg bg-brand text-white hover:opacity-90 transition; }
+.card { @apply rounded-2xl border border-gray-200/60 shadow-sm p-6 bg-white; }
+.prose :where(h1,h2,h3){ @apply font-bold; }
+.prose { @apply leading-relaxed; }

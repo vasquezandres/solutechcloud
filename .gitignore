@@ -1,0 +1,26 @@
+# Node / Next.js
+node_modules/
+.npm/
+.next/
+out/
+.vercel/
+dist/
+coverage/
+
+# Env/keys
+.env
+.env.*
+!.env.example
+
+# Sistema / IDE
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Zips u otros binarios pesados
+*.zip
+*.7z
+*.rar
+*.iso
