@@ -4,9 +4,14 @@ import FAQ from "@/components/FAQ";
 import Link from "next/link";
 import Script from "next/script";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+<<<<<<< HEAD
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
+=======
+import { faWhatsapp, faFilePdf } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+>>>>>>> b7406b842232faea0d4b0fab0a6aa44adc978d2f
 
 export const metadata = {
   title: "Microsoft 365 para Gobierno en Panamá | SolutechCloud",
