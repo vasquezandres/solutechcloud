@@ -4,14 +4,9 @@ import FAQ from "@/components/FAQ";
 import Link from "next/link";
 import Script from "next/script";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-<<<<<<< HEAD
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
-=======
-import { faWhatsapp, faFilePdf } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
->>>>>>> b7406b842232faea0d4b0fab0a6aa44adc978d2f
 
 export const metadata = {
   title: "Microsoft 365 para Gobierno en Panamá | SolutechCloud",
@@ -57,7 +52,7 @@ export default function Page() {
 
         <div className="grid md:grid-cols-3 gap-6 text-sm text-gray-700">
           <div className="card">
-            <h3 className="font-semibold">Correo institucional y archivo</h3>
+            <h3 className="font-semibold">Correo institucional y archivo.</h3>
             <p className="mt-2">
               Dominios oficiales, buzones seguros y retenciones para transparencia y continuidad del servicio.
             </p>
