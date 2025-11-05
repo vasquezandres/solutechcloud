@@ -195,7 +195,8 @@ export default function Page() {
           </div>
         </div>
       </Section>
-      // dentro del componente Page() justo antes del cierre </>
+      
+      {/* dentro del componente Page() justo antes del cierre */ }
       <Script
         id="jsonld-gobierno"
         type="application/ld+json"
