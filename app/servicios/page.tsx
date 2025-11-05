@@ -76,7 +76,7 @@ export default function Page() {
       >
         <div id="seguridad" className="prose max-w-none">
           <p>
-            Antivirus/EDR, endurecimiento, copias 3-2-1 y recuperación.
+            Antivirus/EDR, endurecimiento, copias 3-2-1 y recuperación.<br/>
             Trabajamos con Sophos, Acronis, Veeam y Dropsuite según tu tamaño y
             criticidad.
           </p>
