@@ -3,6 +3,9 @@ import PricingTable from "@/components/PricingTable";
 import FAQ from "@/components/FAQ";
 import Link from "next/link";
 import Script from "next/script";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp, faFilePdf } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata = {
   title: "Microsoft 365 para Gobierno en Panamá | SolutechCloud",
@@ -18,14 +21,32 @@ export default function Page() {
         subtitle="Moderniza la gestión pública con licencias oficiales de Microsoft 365. Facturación local, seguridad avanzada, migración guiada y soporte en español."
       >
         <div className="flex flex-wrap gap-3 mb-6">
-          <a href="https://wa.me/50768886778" target="_blank" className="btn-primary">
+          <a
+            href="https://wa.me/50768886778"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary flex items-center gap-2"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} className="text-white text-lg" />
             WhatsApp · Solicitar cotización
           </a>
-          <Link href="/contacto" className="btn-primary btn-ghost">
+
+          <Link href="/contacto" className="btn-primary btn-ghost flex items-center gap-2">
+            <FontAwesomeIcon icon={faEnvelope} className="text-red-600 text-lg" />
             Enviar requerimiento
           </Link>
-          <a href="/docs/Propuesta-SolutechCloud-M365-Gobierno.pdf" target="_blank" className="btn-primary">Descargar PDF</a>
+
+          <a
+            href="/docs/Propuesta-SolutechCloud-M365-Gobierno.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary flex items-center gap-2"
+          >
+            <FontAwesomeIcon icon={faFilePdf} className="text-white text-lg" />
+            Descargar PDF
+          </a>
         </div>
+
         
 
         <div className="grid md:grid-cols-3 gap-6 text-sm text-gray-700">
