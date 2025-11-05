@@ -2,6 +2,7 @@ import Section from "@/components/Section";
 import PricingTable from "@/components/PricingTable";
 import FAQ from "@/components/FAQ";
 import Link from "next/link";
+import Script from "next/script";
 
 export const metadata = {
   title: "Microsoft 365 para Gobierno en Panamá | SolutechCloud",
@@ -23,6 +24,11 @@ export default function Page() {
           <Link href="/contacto" className="btn-primary btn-ghost">
             Enviar requerimiento
           </Link>
+        </div>
+        
+        <div className="flex flex-wrap gap-3">
+          <a href="https://wa.me/50768886778" target="_blank" className="btn-primary">WhatsApp</a>
+          <a href="/docs/Propuesta-SolutechCloud-M365-Gobierno.pdf" target="_blank" className="btn-ghost">Descargar PDF</a>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 text-sm text-gray-700">
@@ -47,6 +53,18 @@ export default function Page() {
         </div>
       </Section>
 
+      <div className="mt-8 rounded-2xl border p-4 text-sm text-gray-600 flex flex-wrap items-center gap-4">
+        <span className="font-medium text-gray-800">Con experiencia en:</span>
+        <span>Microsoft 365</span>
+        <span>Azure</span>
+        <span>AWS</span>
+        <span>Sophos</span>
+        <span>Acronis</span>
+        <span>Veeam</span>
+        <span>Dropsuite</span>
+      </div>
+  
+      
       <Section title="Planes recomendados para gobierno" subtitle="Ajustados por nivel de productividad, seguridad y cumplimiento.">
         <PricingTable
           tiers={[
@@ -177,6 +195,40 @@ export default function Page() {
           </div>
         </div>
       </Section>
+      // dentro del componente Page() justo antes del cierre </>
+      <Script
+        id="jsonld-gobierno"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Microsoft 365 para Gobierno",
+            provider: {
+              "@type": "Organization",
+              name: "Solutech Panamá - SolutechCloud",
+              url: "https://www.solutechcloud.com/",
+              sameAs: [
+                "https://www.solutechpanama.com/",
+                "https://www.instagram.com/solutechpanama/"
+              ]
+            },
+            areaServed: "PA",
+            serviceType: "Licenciamiento, migración y soporte Microsoft 365 Gobierno",
+            availableChannel: { "@type": "ServiceChannel", serviceLocation: { "@type": "Place", address: { "@type": "PostalAddress", addressCountry: "PA" } } },
+            termsOfService: "https://www.solutechcloud.com/terminos-y-condiciones/",
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Planes recomendados",
+              itemListElement: [
+                { "@type": "Offer", name: "Microsoft 365 E1" },
+                { "@type": "Offer", name: "Microsoft 365 E3" },
+                { "@type": "Offer", name: "Microsoft 365 E5" }
+              ]
+            }
+          })
+        }}
+      />
     </>
   );
 }
