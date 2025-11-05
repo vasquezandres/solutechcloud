@@ -3,13 +3,13 @@ import Section from "@/components/Section";
 export default function Page() {
   const casos = [
     {
-      t: "Migración de correo a Microsoft 365",
-      r: "45 usuarios · 180 GB",
+      t: "Migración de correo a Microsoft 365, Se habilitó MFA, acceso condicional por país y retención legal. Se capacitó a mesa de ayuda interna.",
+      r: "80 usuarios · 0 pérdidas de correo durante el cambio",
       d: "Se migró desde Google Workspace a M365. Se normalizaron dominios, se aplicó MFA y se capacitó a usuarios.",
     },
     {
-      t: "Respaldo y recuperación",
-      r: "M365 + PCs",
+      t: "Respaldo M365 y PCs críticos",
+      r: "Cobertura de Exchange Online, OneDrive, SharePoint y equipos de dirección, con reportes mensuales.",
       d: "Se implementó copia 3-2-1 con retención legal y pruebas de restauración trimestrales.",
     },
   ];

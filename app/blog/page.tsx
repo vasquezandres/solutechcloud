@@ -9,6 +9,17 @@ export default function Page() {
       excerpt:
         "Resumen del proceso, modalidades de compra y buenas prácticas para entidades públicas.",
     },
+    {
+      slug: "como-definir-retenciones-y-archivo-en-microsoft-365",
+      title: "Cómo definir retenciones y archivo en Microsoft 365",
+      excerpt: "Buenas prácticas para correo y documentos: cumplimiento, trazabilidad y auditoría."
+    },
+    {
+      slug: "backup-para-microsoft-365-que-si-y-que-no-respalda",
+      title: "Backup para Microsoft 365: qué sí y qué no respalda",
+      excerpt: "Coberturas, límites y por qué el backup sigue siendo necesario incluso en la nube."
+    },
+
   ];
   return (
     <Section title="Blog" subtitle="Notas y guías prácticas.">
@@ -22,6 +33,10 @@ export default function Page() {
             </span>
           </Link>
         ))}
+      </div>
+      <div className="mt-6 text-sm text-gray-700">
+        <p><b>WhatsApp:</b> +507 6888-6778</p>
+        <p><b>Correo:</b> soporte@solutechpanama.com</p>
       </div>
     </Section>
   );

@@ -20,12 +20,12 @@ export default function Page() {
               Configuramos correo, OneDrive/SharePoint, Teams, seguridad
               (MFA/Conditional Access) y buenas prácticas de identidad.
               También gestionamos licencias Business y Enterprise, incluyendo
-              Visio y Project.
+              Visio y Project. Migramos desde Gmail/IMAP/Exchange, normalizamos dominios, definimos retenciones y capacitamos a usuarios por rol.
             </p>
             <ul>
-              <li>Alta/migración de buzones desde Gmail/IMAP/Exchange.</li>
-              <li>Estructura de archivos y permisos en OneDrive/SharePoint.</li>
-              <li>Copias y retención para cumplimiento.</li>
+              <li>Migración de buzones con trazabilidad y verificación por usuario. Alta de buzones desde Gmail/IMAP/Exchange.</li>
+              <li>Estructura de archivos y permisos en OneDrive/SharePoint. Estructura documental con permisos por áreas y control de versiones.</li>
+              <li>Copias y retención para cumplimiento. Retención legal, auditoría unificada y políticas de cumplimiento.</li>
             </ul>
           </div>
           <PricingTable
@@ -79,8 +79,11 @@ export default function Page() {
           </p>
           <ul>
             <li>EDR/antivirus gestionado y alertas.</li>
+            <li>Alertas centralizadas y respuesta inicial a incidentes.</li>
+            <li>Backups con retención granular y restauración por elemento.</li>
             <li>Backups de equipos, servidores y M365.</li>
             <li>Pruebas de restauración y plan de respuesta.</li>
+            <li>Pruebas de recuperación y reporte periódico.</li>
           </ul>
         </div>
       </Section>
@@ -110,6 +113,12 @@ export default function Page() {
             flexible.
           </p>
         </div>
+        
+        <div className="mt-8 flex gap-3">
+          <a href="https://wa.me/50768886778" target="_blank" className="btn-primary">Pedir propuesta</a>
+          <a href="/contacto" className="btn-ghost">Escribir requerimiento</a>
+        </div>
+
       </Section>
 
       {/* FAQ */}

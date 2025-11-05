@@ -24,12 +24,9 @@ export default function Page() {
           <Link href="/contacto" className="btn-primary btn-ghost">
             Enviar requerimiento
           </Link>
+          <a href="/docs/Propuesta-SolutechCloud-M365-Gobierno.pdf" target="_blank" className="btn-primary">Descargar PDF</a>
         </div>
         
-        <div className="flex flex-wrap gap-3">
-          <a href="https://wa.me/50768886778" target="_blank" className="btn-primary">WhatsApp</a>
-          <a href="/docs/Propuesta-SolutechCloud-M365-Gobierno.pdf" target="_blank" className="btn-ghost">Descargar PDF</a>
-        </div>
 
         <div className="grid md:grid-cols-3 gap-6 text-sm text-gray-700">
           <div className="card">
@@ -197,6 +194,7 @@ export default function Page() {
       </Section>
       
       {/* dentro del componente Page() justo antes del cierre */ }
+      // @ts-ignore
       <Script
         id="jsonld-gobierno"
         type="application/ld+json"
