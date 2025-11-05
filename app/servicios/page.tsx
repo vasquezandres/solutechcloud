@@ -18,14 +18,17 @@ export default function Page() {
           <div className="prose max-w-none">
             <p>
               Configuramos correo, OneDrive/SharePoint, Teams, seguridad
-              (MFA/Conditional Access) y buenas prácticas de identidad.
-              También gestionamos licencias Business y Enterprise, incluyendo
-              Visio y Project. Migramos desde Gmail/IMAP/Exchange, normalizamos dominios, definimos retenciones y capacitamos a usuarios por rol.
+              (MFA/Conditional Access) y buenas prácticas de identidad.<br/>También gestionamos licencias Business y Enterprise, 
+              incluyendo Visio y Project.<br/>Migramos desde Gmail/IMAP/Exchange, normalizamos dominios, 
+              definimos retenciones y capacitamos a usuarios por rol.
             </p>
-            <ul>
-              <li>Migración de buzones con trazabilidad y verificación por usuario. Alta de buzones desde Gmail/IMAP/Exchange.</li>
-              <li>Estructura de archivos y permisos en OneDrive/SharePoint. Estructura documental con permisos por áreas y control de versiones.</li>
-              <li>Copias y retención para cumplimiento. Retención legal, auditoría unificada y políticas de cumplimiento.</li>
+            <ul className="list-disc pl-6">
+              <li>Migración de buzones con trazabilidad y verificación por usuario..</li>
+              <li>Estructura de archivos y permisos en OneDrive/SharePoint.</li>
+              <li>Copias y retención para cumplimiento. </li>
+              <li>Alta de buzones desde Gmail/IMAP/Exchange.</li>
+              <li>Estructura documental con permisos por áreas y control de versiones.</li>
+              <li>Retención legal, auditoría unificada y políticas de cumplimiento.</li>
             </ul>
           </div>
           <PricingTable
