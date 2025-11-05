@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <>
       <Section
-        title="Microsoft 365 para Gobierno en Panamá"
+        title="Microsoft 365 para Gobierno en Panamá."
         subtitle="Moderniza la gestión pública con licencias oficiales de Microsoft 365. Facturación local, seguridad avanzada, migración guiada y soporte en español."
       >
         <div className="flex flex-wrap gap-3 mb-6">
