@@ -10,6 +10,19 @@ export function Footer(){
           </div>
           <p className="mt-3 text-gray-600">Soluciones reales a problemas tecnológicos. Licenciamiento, nube, seguridad y soporte.</p>
         </div>
+        
+        <div className="flex flex-wrap gap-3 mb-6">
+          <a
+            href="https://clip.solutechcloud.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary flex items-center gap-2"
+          >
+            <FontAwesomeIcon icon={faPaperclip} className="text-white text-lg" />
+            Clip Solutech Cloud
+          </a>
+        </div>
+
         <div>
           <h4 className="font-semibold mb-3">Enlaces</h4>
           <ul className="space-y-2 text-gray-600">
