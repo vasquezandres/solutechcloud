@@ -130,9 +130,11 @@ export function NavBar() {
       <div className="container-limit flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="size-9 grid place-items-center rounded-xl bg-brand text-white font-black text-lg shadow-sm group-hover:shadow-md transition-shadow">
-            S
-          </div>
+          <img
+            src="https://cdn.solutechcloud.com/logos/Solutech_S_Logo.webp"
+            alt="SolutechCloud"
+            className="h-9 w-9 object-contain rounded-xl shadow-sm group-hover:shadow-md transition-shadow"
+          />
           <span className="font-bold text-gray-900">
             Solutech<span className="text-brand">Cloud</span>
           </span>
