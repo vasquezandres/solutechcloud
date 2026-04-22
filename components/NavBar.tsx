@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Paperclip } from "lucide-react";
 import { useState, useEffect } from "react";
 import { siteConfig } from "@/lib/site-config";
 
