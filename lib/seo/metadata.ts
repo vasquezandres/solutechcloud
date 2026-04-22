@@ -130,7 +130,7 @@ export const rootMetadata: Metadata = {
   applicationName: siteConfig.name,
   authors: [{ name: siteConfig.legalName }],
   generator: "Next.js",
-  keywords: siteConfig.topics,
+  keywords: [...siteConfig.topics],
   referrer: "origin-when-cross-origin",
   creator: siteConfig.legalName,
   publisher: siteConfig.legalName,
