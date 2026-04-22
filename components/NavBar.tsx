@@ -227,6 +227,17 @@ export function NavBar() {
             );
           })}
 
+          <a
+            href="https://clip.solutechcloud.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-2 inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-xl border border-gray-200 text-gray-700 hover:text-brand hover:border-brand hover:bg-gray-50 transition-colors"
+            aria-label="Abrir Clip en una nueva pestaña"
+          >
+            <Paperclip className="size-4" />
+            Clip
+          </a>
+
           <Link
             href="/contacto/"
             className="ml-2 btn-primary text-sm py-2 px-4"
@@ -317,6 +328,16 @@ export function NavBar() {
             >
               Solicitar cotización
             </Link>
+
+            <a
+              href="https://clip.solutechcloud.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-gray-200 text-sm font-medium text-gray-700 hover:text-brand hover:border-brand hover:bg-gray-50 transition-colors"
+            >
+              <Paperclip className="size-4" />
+              Abrir Clip
+            </a>
 
             <a
               href={siteConfig.contact.whatsappUrl}
