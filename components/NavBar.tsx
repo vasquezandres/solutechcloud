@@ -131,7 +131,7 @@ export function NavBar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
           <img
-            src="https://cdn.solutechcloud.com/logos/Solutech_S_Logo.webp"
+            src="https://cdn.solutechcloud.com/logos/Logo_Solutech_S1a.webp"
             alt="SolutechCloud"
             className="h-9 w-9 object-contain rounded-xl shadow-sm group-hover:shadow-md transition-shadow"
           />
