@@ -54,7 +54,7 @@ export function buildMetadata(input: PageMetadataInput): Metadata {
   const metadata: Metadata = {
     title,
     description,
-    keywords: keywords?.join(", "),
+    keywords: keywords,
 
     alternates: {
       canonical: canonicalUrl,

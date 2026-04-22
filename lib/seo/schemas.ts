@@ -70,12 +70,8 @@ export function localBusinessSchema() {
       addressCountry: siteConfig.address.country,
       addressRegion: siteConfig.address.region,
       addressLocality: siteConfig.address.city,
-      ...(siteConfig.address.streetAddress && {
-        streetAddress: siteConfig.address.streetAddress,
-      }),
-      ...(siteConfig.address.postalCode && {
-        postalCode: siteConfig.address.postalCode,
-      }),
+      streetAddress: siteConfig.address.streetAddress || undefined,
+      postalCode: siteConfig.address.postalCode || undefined,
     },
     areaServed: siteConfig.areaServed,
     knowsAbout: siteConfig.topics,
