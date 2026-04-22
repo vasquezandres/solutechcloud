@@ -18,9 +18,12 @@ export default function Hero() {
       </div>
       <div className="card">
         <div className="aspect-video rounded-2xl bg-gradient-to-br from-brand/20 to-fuchsia-200 grid place-items-center text-center">
-          <div>
-            <div className="text-6xl font-black text-brand">SC</div>
-            <p className="text-gray-600 mt-3">Demo visual — reemplazar por gráfico/hero real</p>
+          <div className="rounded-2xl overflow-hidden shadow-md">
+            <img
+              src="/img/hero.webp"
+              alt="Nube y productividad con SolutechCloud"
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </div>
