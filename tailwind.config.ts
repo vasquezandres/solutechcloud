@@ -4,7 +4,7 @@ export default {
   content: ["./app/**/*.{ts,tsx,mdx}", "./components/**/*.{ts,tsx}"],
   theme: {
     extend: {
-      colors: { brand: { DEFAULT: "#e11d48", 600: "#e11d48" } },
+      colors: { brand: { DEFAULT: "#ff1748", 600: "#ff1748" } },
       borderRadius: { '2xl': '1rem' }
     },
   },

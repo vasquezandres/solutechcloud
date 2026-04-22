@@ -1,0 +1,48 @@
+# ============================================================
+# Headers HTTP para seguridad y optimización
+# ============================================================
+# Cloudflare Pages lee este archivo desde /public/
+# Docs: https://developers.cloudflare.com/pages/configuration/headers/
+# ============================================================
+
+# --- Headers de seguridad globales ---
+/*
+  # Seguridad
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  # Anti XSS básico
+  X-XSS-Protection: 1; mode=block
+
+# --- Cache largo para assets estáticos (inmutables por hash de Next) ---
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.ico
+  Cache-Control: public, max-age=2592000
+
+# --- PDFs (descargables, pueden cambiar) ---
+/docs/*
+  Cache-Control: public, max-age=86400
+
+# --- HTML: cache corto + revalidación ---
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# --- robots / sitemap: cache corto ---
+/robots.txt
+  Cache-Control: public, max-age=3600
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600

@@ -1,0 +1,44 @@
+# ============================================================
+# Redirects 301 para la nueva arquitectura de URLs
+# ============================================================
+# Cloudflare Pages lee este archivo automáticamente desde /public/
+# Formato: origen destino codigo
+# Docs: https://developers.cloudflare.com/pages/configuration/redirects/
+# ============================================================
+
+# --- Páginas eliminadas o movidas ---
+
+# /gobierno/ ahora vive bajo /soluciones/sector-publico/
+/gobierno                /soluciones/sector-publico/microsoft-365-gobierno/   301
+/gobierno/               /soluciones/sector-publico/microsoft-365-gobierno/   301
+
+# /sectores/ se eliminó, ahora es /soluciones/
+/sectores                /soluciones/                                         301
+/sectores/               /soluciones/                                         301
+
+# /casos/ ahora es /casos-de-exito/
+/casos                   /casos-de-exito/                                     301
+/casos/                  /casos-de-exito/                                     301
+
+# /blog/* ahora vive bajo /recursos/blog/*
+/blog                    /recursos/blog/                                      301
+/blog/                   /recursos/blog/                                      301
+/blog/*                  /recursos/blog/:splat                                301
+
+# Legales unificados bajo /legal/
+/politica-de-privacidad         /legal/privacidad/                            301
+/politica-de-privacidad/        /legal/privacidad/                            301
+/politica-de-cookies            /legal/cookies/                               301
+/politica-de-cookies/           /legal/cookies/                               301
+/terminos-y-condiciones         /legal/terminos/                              301
+/terminos-y-condiciones/        /legal/terminos/                              301
+
+# --- URLs viejas del sitemap
+/microsoft-365-gobierno-panama.html   /soluciones/sector-publico/microsoft-365-gobierno/   301
+/seguridad-backup.html                /servicios/seguridad-y-backup/                        301
+/nube.html                            /servicios/azure/                                     301
+/licencias-microsoft.html             /servicios/microsoft-365/                             301
+/contacto.html                        /contacto/                                            301
+
+# --- Normalizaciones ---
+https://www.solutechcloud.com/*   https://solutechcloud.com/:splat             301!

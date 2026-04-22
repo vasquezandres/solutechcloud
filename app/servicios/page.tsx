@@ -1,148 +1,84 @@
-import Section from "@/components/Section";
-import PricingTable from "@/components/PricingTable";
-import FAQ from "@/components/FAQ";
+import Link from "next/link";
+import { buildMetadata } from "@/lib/seo/metadata";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { Mail, Cloud, Server, ShieldCheck, RefreshCw, ArrowRight } from "lucide-react";
+
+export const metadata = buildMetadata({
+  title: "Servicios cloud y licenciamiento Microsoft en Panamá",
+  description:
+    "Microsoft 365, correo corporativo, Azure, AWS, seguridad, backup y migraciones. Para empresas y sector público en Panamá y Centroamérica.",
+  path: "/servicios/",
+  keywords: [
+    "servicios cloud Panamá",
+    "licenciamiento Microsoft Panamá",
+    "proveedor tecnológico Centroamérica",
+    "partner Microsoft Panamá",
+  ],
+});
+
+const services = [
+  { href: "/servicios/microsoft-365/", icon: Mail, title: "Microsoft 365", desc: "Licenciamiento Business y Enterprise, migración, MFA, backup y soporte. Partner oficial con facturación local.", highlights: ["Business y Enterprise", "Migración completa", "Seguridad configurada"] },
+  { href: "/servicios/correo-corporativo/", icon: Mail, title: "Correo corporativo", desc: "Exchange Online o Google Workspace con tu dominio. Anti-spam, anti-phishing, MFA, 50 GB por buzón.", highlights: ["Con tu dominio propio", "Anti-phishing incluido", "50+ GB por usuario"] },
+  { href: "/servicios/azure/", icon: Cloud, title: "Microsoft Azure", desc: "Infraestructura cloud Microsoft. VMs, redes virtuales, Active Directory, backup de servidores y optimización de costos.", highlights: ["VMs y storage", "Redes y VPN", "Optimización de costos"] },
+  { href: "/servicios/aws/", icon: Server, title: "Amazon AWS", desc: "Infraestructura cloud Amazon. EC2, S3, redes, CDN, seguridad y migración desde on-premise.", highlights: ["EC2 y S3", "CDN CloudFront", "Migración desde on-prem"] },
+  { href: "/servicios/seguridad-y-backup/", icon: ShieldCheck, title: "Seguridad y backup", desc: "EDR, antivirus gestionado, backup 3-2-1 inmutable, respuesta a incidentes y cumplimiento.", highlights: ["EDR con Sophos/Defender", "Backup inmutable", "Respuesta a incidentes"] },
+  { href: "/servicios/migraciones/", icon: RefreshCw, title: "Migraciones", desc: "Transiciones de correo, archivos, servidores y aplicaciones. Sin pérdidas, con ventanas coordinadas y comunicación a usuarios.", highlights: ["Correo y archivos", "Servidores y VMs", "Comunicación a usuarios"] },
+];
 
 export default function Page() {
   return (
     <>
-      <p className="text-gray-600 mt-2">
-        Soluciones prácticas con precios claros.
-      </p>
+      <Breadcrumbs items={[]} current="Servicios" />
 
-      {/* M365 */}
-      <Section
-        title="Microsoft 365"
-        subtitle="Licenciamiento, implementación y administración."
-      >
-        <div id="m365" className="grid lg:grid-cols-2 gap-8">
-          <div className="prose max-w-none">
-            <p>
-              Configuramos correo, OneDrive/SharePoint, Teams, seguridad
-              (MFA/Conditional Access) y buenas prácticas de identidad.<br/>También gestionamos licencias Business y Enterprise, 
-              incluyendo Visio y Project.<br/>Migramos desde Gmail/IMAP/Exchange, normalizamos dominios, 
-              definimos retenciones y capacitamos a usuarios por rol.
-            </p>
-            <ul className="list-disc pl-6">
-              <li>Migración de buzones con trazabilidad y verificación por usuario..</li>
-              <li>Estructura de archivos y permisos en OneDrive/SharePoint.</li>
-              <li>Copias y retención para cumplimiento. </li>
-              <li>Alta de buzones desde Gmail/IMAP/Exchange.</li>
-              <li>Estructura documental con permisos por áreas y control de versiones.</li>
-              <li>Retención legal, auditoría unificada y políticas de cumplimiento.</li>
-            </ul>
-          </div>
-          <PricingTable
-            tiers={[
-              {
-                name: "Kickoff",
-                price: "Desde $149",
-                features: [
-                  "Diagnóstico y plan",
-                  "Configuración básica de tenant",
-                  "MFA y políticas iniciales",
-                ],
-                cta: { label: "Cotizar", href: "/contacto" },
-              },
-              {
-                name: "Implementación PyME",
-                price: "Desde $490",
-                highlight: true,
-                features: [
-                  "Correo + OneDrive/SharePoint",
-                  "Migración básica de datos",
-                  "Capacitación y adopción",
-                ],
-                cta: { label: "Cotizar", href: "/contacto" },
-              },
-              {
-                name: "Administrado",
-                price: "Mensual",
-                features: [
-                  "Gestión de licencias",
-                  "Soporte y monitoreo",
-                  "Mejoras continuas",
-                ],
-                cta: { label: "Cotizar", href: "/contacto" },
-              },
-            ]}
-          />
+      <section className="pt-4 pb-10 lg:pb-16">
+        <div className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">
+          Catálogo de servicios
         </div>
-      </Section>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-[1.1] text-gray-900 max-w-4xl">
+          Servicios tecnológicos para{" "}
+          <span className="text-brand">organizaciones serias</span>
+        </h1>
+        <p className="mt-5 text-lg text-gray-600 leading-relaxed max-w-2xl">
+          Licenciamiento Microsoft, infraestructura cloud, seguridad y migraciones. Trabajamos con PyMEs, corporaciones y entidades del sector público en Panamá y Centroamérica.
+        </p>
+      </section>
 
-      {/* Seguridad */}
-      <Section
-        title="Seguridad & Backup"
-        subtitle="Protección avanzada contra amenazas y respaldo integral."
-      >
-        <div id="seguridad" className="prose max-w-none">
-          <p>
-            Antivirus/EDR, endurecimiento, copias 3-2-1 y recuperación.<br/>
-            Trabajamos con Sophos, Acronis, Veeam y Dropsuite según tu tamaño y
-            criticidad.
-          </p>
-          <ul>
-            <li>EDR/antivirus gestionado y alertas.</li>
-            <li>Alertas centralizadas y respuesta inicial a incidentes.</li>
-            <li>Backups con retención granular y restauración por elemento.</li>
-            <li>Backups de equipos, servidores y M365.</li>
-            <li>Pruebas de restauración y plan de respuesta.</li>
-            <li>Pruebas de recuperación y reporte periódico.</li>
-          </ul>
+      <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        {services.map((s) => {
+          const Icon = s.icon;
+          return (
+            <Link key={s.href} href={s.href} className="card hover:shadow-lg hover:border-brand/30 transition-all group">
+              <div className="size-11 grid place-items-center rounded-xl bg-brand/10 text-brand mb-4">
+                <Icon className="size-5" />
+              </div>
+              <h2 className="font-bold text-lg text-gray-900 group-hover:text-brand transition-colors">
+                {s.title}
+              </h2>
+              <p className="mt-2 text-sm text-gray-600 leading-relaxed">{s.desc}</p>
+              <ul className="mt-4 space-y-1 text-xs text-gray-500">
+                {s.highlights.map((h) => (<li key={h}>• {h}</li>))}
+              </ul>
+              <div className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-brand">
+                Ver servicio
+                <ArrowRight className="size-3.5 group-hover:translate-x-0.5 transition-transform" />
+              </div>
+            </Link>
+          );
+        })}
+      </section>
+
+      <section className="mt-20 rounded-3xl bg-gray-50 border border-gray-100 p-8 md:p-12 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900">¿No sabes por dónde empezar?</h2>
+        <p className="mt-3 text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          Cuéntanos tu situación actual y objetivos. Te ayudamos a priorizar y armar un plan por fases que no comprometa presupuesto de un solo golpe.
+        </p>
+        <div className="mt-6">
+          <Link href="/contacto/" className="btn-primary">
+            Conversemos
+            <ArrowRight className="size-4" />
+          </Link>
         </div>
-      </Section>
-
-      {/* Nube */}
-      <Section
-        title="Infraestructura en la nube"
-        subtitle="Servidores, almacenamiento y redes en Azure y AWS."
-      >
-        <div id="nube" className="prose max-w-none">
-          <p>
-            Levantamos cargas en Azure/AWS, redes privadas, túneles/VPN, y
-            optimización de costos. Incluye automatizaciones y monitoreo básico.
-          </p>
-        </div>
-      </Section>
-
-      {/* Migraciones */}
-      <Section
-        title="Migraciones y soporte"
-        subtitle="Correo, archivos y directorio; adopción y soporte técnico."
-      >
-        <div id="migraciones" className="prose max-w-none">
-          <p>
-            Plan de migración, ventana de cambio, comunicación y soporte al
-            usuario. Después administramos tu entorno con un esquema mensual
-            flexible.
-          </p>
-        </div>
-        
-        <div className="mt-8 flex gap-3">
-          <a href="https://wa.me/50768886778" target="_blank" className="btn-primary">Pedir propuesta</a>
-          <a href="/contacto" className="btn-ghost">Escribir requerimiento</a>
-        </div>
-
-      </Section>
-
-      {/* FAQ */}
-      <Section title="Preguntas frecuentes">
-        <FAQ
-          items={[
-            {
-              q: "¿Pueden solo venderme las licencias?",
-              a: "Sí. También podemos acompañarte con la implementación cuando lo necesites.",
-            },
-            {
-              q: "¿Cómo calculan el costo de migración?",
-              a: "Depende de usuarios, volumen de datos y complejidad (permisos, dominios, coexistencia). Te damos un estimado claro antes de empezar.",
-            },
-            {
-              q: "¿Ofrecen soporte mensual?",
-              a: "Sí, con bolsas de horas o tarifa plana según el tamaño de tu organización.",
-            },
-          ]}
-        />
-      </Section>
+      </section>
     </>
   );
 }
