@@ -121,33 +121,66 @@ export function buildMetadata(input: PageMetadataInput): Metadata {
  */
 export const rootMetadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+
   title: {
     default: `${siteConfig.name} — ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.name}`,
   },
+
   description:
     "Partner Microsoft 365, Azure y AWS en Panamá y Centroamérica. Licenciamiento, migraciones, seguridad y soporte para empresas y sector público.",
+
   applicationName: siteConfig.name,
   authors: [{ name: siteConfig.legalName }],
   generator: "Next.js",
+
   keywords: [...siteConfig.topics],
+
   referrer: "origin-when-cross-origin",
   creator: siteConfig.legalName,
   publisher: siteConfig.legalName,
+
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
+
+  // ✅ ESTO ES LO QUE ARREGLA WHATSAPP
+  openGraph: {
+    type: "website",
+    locale: siteConfig.locale,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    description:
+      "SolutechCloud — Partner Microsoft 365, Azure y AWS en Panamá y Centroamérica. Licenciamiento, migraciones, seguridad y soporte para empresas y sector público.",
+    images: [
+      {
+        url: "https://cdn.solutechcloud.com/img/og-default.png", // ← IMPORTANTE
+        width: 1200,
+        height: 630,
+        alt: "SolutechCloud",
+      },
+    ],
+  },
+
+  // ✅ TAMBIÉN IMPORTANTE PARA REDES
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    description:
+      "SolutechCloud — Partner Microsoft 365, Azure y AWS en Panamá y Centroamérica. Licenciamiento, migraciones, seguridad y soporte para empresas y sector público.",
+    images: ["https://cdn.solutechcloud.com/img/og-default.png"],
+  },
+
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
     ],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
-    other: [
-      { rel: "manifest", url: "/site.webmanifest" },
-    ],
+    other: [{ rel: "manifest", url: "/site.webmanifest" }],
   },
 };
