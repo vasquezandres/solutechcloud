@@ -128,7 +128,7 @@ export const rootMetadata: Metadata = {
   },
 
   description:
-    "Partner Microsoft 365, Azure y AWS en Panamá y Centroamérica. Licenciamiento, migraciones, seguridad y soporte para empresas y sector público.",
+    "SolutechCloud — Partner Microsoft 365, Azure y AWS en Panamá y Centroamérica. Licenciamiento, migraciones, seguridad y soporte para empresas y sector público.",
 
   applicationName: siteConfig.name,
   authors: [{ name: siteConfig.legalName }],

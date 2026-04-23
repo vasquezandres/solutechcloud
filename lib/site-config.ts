@@ -13,7 +13,7 @@ export const siteConfig = {
 
   // URLs
   url: "https://solutechcloud.com",
-  ogImage: "/og-default.jpg", // lo generamos como imagen real
+  ogImage: "https://cdn.solutechcloud.com/img/og-default.png",
   locale: "es_PA",
 
   // Contacto
