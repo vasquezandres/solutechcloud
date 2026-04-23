@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://solutechcloud.com/</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://solutechcloud.com/microsoft-365-gobierno-panama.html</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://solutechcloud.com/seguridad-backup.html</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://solutechcloud.com/nube.html</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://solutechcloud.com/licencias-microsoft.html</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://solutechcloud.com/contacto.html</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://solutechcloud.com/blog/</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://solutechcloud.com/blog/como-adquirir-microsoft-365-sector-publico-panama.html</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.72</priority>
+  </url>
+</urlset>

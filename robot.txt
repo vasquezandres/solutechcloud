@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Evita indexar páginas de prueba (si las tuvieras)
+Disallow: /tmp/
+Disallow: /drafts/
+
+Sitemap: https://solutechcloud.com/sitemap.xml
