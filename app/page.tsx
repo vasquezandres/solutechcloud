@@ -109,12 +109,12 @@ export default function Page() {
           </div>
 
           <div className="lg:justify-self-end">
-            <div className="rounded-3xl overflow-hidden border border-gray-100 shadow-sm bg-gradient-to-br from-brand/5 to-gray-50 aspect-[4/3] lg:aspect-square lg:max-w-md">
+            <div className="rounded-3xl overflow-hidden border border-gray-100 shadow-sm bg-gradient-to-br from-brand/5 to-gray-50 aspect-video lg:max-w-md">
               <img
-                src="/img/hero.webp"
+                src="https://cdn.solutechcloud.com/img/hero.webp"
                 alt="Servicios cloud y licenciamiento Microsoft en Panamá"
-                width={600}
-                height={600}
+                width={1200}
+                height={630}
                 className="w-full h-full object-cover"
                 loading="eager"
               />
